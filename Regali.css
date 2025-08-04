@@ -9,7 +9,7 @@
 
 .Home {
     width: 100%;
-    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(regali.png);
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(regali.webp);
     background-position: center;
     background-size: cover;
     height: 110vh;
@@ -154,3 +154,4 @@ ul li a:hover{
         font-size: 18px;
     }
 }
+
