@@ -99,7 +99,7 @@ ul li a:hover{
 
 @media (max-width: 768px) {
    .Home {
-        background-image: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(STORIA\ MOB.png);
+        background-image: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(STORIA\ MOB.webp);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
@@ -153,5 +153,6 @@ ul li a:hover{
         font-size: 18px;
     }
 }
+
 
 
