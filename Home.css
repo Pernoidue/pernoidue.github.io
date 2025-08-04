@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 *{
     margin: 0;
@@ -88,7 +87,7 @@ ul li a:hover{
 
 @media (max-width: 768px) {
     .Home {
-        background-image: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(homepag\ mob.png);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(homepag\ mob.webp);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -142,6 +141,7 @@ ul li a:hover{
         font-size: 18px;
     }
 }
+
 
 
 
