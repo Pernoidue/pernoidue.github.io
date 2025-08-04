@@ -70,7 +70,7 @@ body{
 }
 
 @media (max-width: 768px) {
-    .body {
+    body {
         background-image: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(immagini.png);
         background-repeat: no-repeat;
         background-attachment: scroll;
@@ -124,6 +124,7 @@ body{
         font-size: 18px;
     }
 }
+
 
 
 
