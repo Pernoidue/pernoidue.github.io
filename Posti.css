@@ -94,6 +94,12 @@ html, body {
     font-size: 2rem;
 }
 
+.wrapper par {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
 /* Responsive styles */
 @media (max-width: 900px) {
     .Home{
@@ -148,6 +154,7 @@ html, body {
         font-size: 0.95rem;
     }
 }
+
 
 
 
