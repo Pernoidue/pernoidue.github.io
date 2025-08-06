@@ -1,89 +1,121 @@
-
-*{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    color: #fff;
+    background: none;
 }
 
 .Home {
     width: 100%;
-    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(homepa.webp);
+    height: 100vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(homepa.webp);
     background-position: center;
     background-size: cover;
-    height: 100vh;
-}
-.navbar{
-    width: 1200px;
-    height: 75px;
-    
-}
-
-.icon  {
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo{
-    color:black;
-    font-size: 40px;
-    padding-left: 35px;
-    float: left;
-    padding-top: 35px;
-}
-
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-    padding-left: 25px;
-    padding-top: 25px;
-}
-ul{
-    float: left;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.icon {
+    display: flex;
     align-items: center;
 }
 
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 20px;
-    font-size:25px;
+.logo {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 8px;
 }
 
-ul li a{
+.menu ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.menu ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
-ul li a:hover{
-    color:#831005;
+.menu ul li a:hover {
+    color: #831005;
 }
 
-.did h1{
-    float: right;
+
+.did {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 8vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.did h1 {
     text-align: right;
-    width: 40%;
-    padding-top: 300px;
     font-size: 55px;
     color: #fff;
-
+    margin-bottom: 16px;
 }
 
-.did p{
+.did p {
     text-align: right;
-    float: right;
-    width: 30%;
-    padding-top: 1%;
-    padding-left: 60%;
     font-size: 30px;
     color: #fff;
+    max-width: 600px;
+    margin-left: auto;
 }
 
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+    .menu ul {
+        gap: 18px;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .did h1 {
+        font-size: 2.2rem;
+    }
+    .did p {
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 768px) {
     .Home {
@@ -95,25 +127,6 @@ ul li a:hover{
         width: 100vw;
         overflow-x: hidden;
     }
-    .did {
-        width: 95vw;
-        max-width: 100%;
-        height: auto;
-        position: static;
-        margin: 20px auto;
-        padding: 20px 10px;
-        left: 0;
-        right: 0;
-        top: 0;
-        border-radius: 10px;
-        box-sizing: border-box;
-    }
-    .did h1 {
-        font-size: 32px;
-    }
-    .did p {
-        font-size: 20px;
-    }
     .navbar {
         width: 100vw;
         max-width: 100%;
@@ -122,29 +135,27 @@ ul li a:hover{
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
+        padding: 8px;
     }
     .icon, .logo, .menu {
-        float: none;
         width: 100%;
-        padding: 10px 0;
+        padding: 8px 0;
         text-align: center;
         box-sizing: border-box;
     }
-    ul {
-        flex-direction: row;
-        align-items: normal;
+    .menu ul {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
     }
-    ul li {
-        margin-left: 0;
-        margin: 10px;
-        margin-top: 10px;
-        font-size: 18px;
+    .did {
+        align-items: flex-end;
+        padding: 30px 4vw 0 0;
+    }
+    .did h1 {
+        font-size: 1.3rem;
+    }
+    .did p {
+        font-size: 0.95rem;
     }
 }
-
-
-
-
-
-
-
