@@ -41,7 +41,7 @@
 .wrapper p{
     text-align: center;
     margin-top: 10px;
-    font-size: 32px ;
+    font-size: 12px ;
 }
 
 .navbar{
@@ -153,6 +153,7 @@ ul li a:hover{
         font-size: 18px;
     }
 }
+
 
 
 
