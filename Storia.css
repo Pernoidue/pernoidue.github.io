@@ -17,7 +17,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(storia.webp);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -95,6 +95,7 @@ body {
 /* Responsive styles */
 @media (max-width: 900px) {
     .Home{
+        background-position: center center;
         background-size: cover;
     }
     .navbar {
@@ -146,4 +147,5 @@ body {
         font-size: 0.95rem;
     }
 }
+
 
