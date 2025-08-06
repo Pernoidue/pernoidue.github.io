@@ -6,13 +6,7 @@
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
 }
-html{
-    background: url(storia.webp) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 body {
     min-height: 100vh;
     background: #000;
@@ -21,7 +15,10 @@ body {
 
 .Home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(storia.webp);
+    background-position: center center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
