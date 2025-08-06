@@ -71,6 +71,28 @@ body{
     font-size:16px;
 }
 
+@media (max-width: 900px) {
+   .body {
+        background-image: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(immagini.webp);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        max-width: 95vw;
+        padding: 20px 10px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+}
 @media (max-width: 768px) {
    .body {
         background-image: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(immagini.webp);
@@ -93,6 +115,7 @@ body{
         box-sizing: border-box;
     }
 }
+
 
 
 
