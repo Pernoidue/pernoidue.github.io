@@ -6,16 +6,14 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
-html,body {
-    min-height: 100vh;
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
-    background: #000;
-    color: #fff;
+    color:#fff;
+    min-height: 100vh;
+    background: none;
 }
-
 .Home {
     width: 100%;
     min-height: 100vh;
@@ -150,4 +148,5 @@ html,body {
         font-size: 0.95rem;
     }
 }
+
 
