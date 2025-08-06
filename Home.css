@@ -70,24 +70,27 @@ html, body {
     color: #831005;
 }
 
-.did {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+
+.did h1{
+    float: right;
+    text-align: right;
+    width: 40%;
+    padding-top: 300px;
+    font-size: 55px;
+    color: #fff;
+
 }
 
-.did h1, .did p {
+.did p{
     text-align: right;
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-    max-width: 100%;
+    float: right;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 60%;
+    font-size: 30px;
+    color: #fff;
 }
+
 
 
 @media (max-width: 900px) {
