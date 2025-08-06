@@ -71,24 +71,32 @@ html, body {
 }
 
 
-.did h1{
-    float: right;
-    text-align: right;
-    width: 40%;
-    padding-top: 300px;
-    font-size: 55px;
-    color: #fff;
-
+.did {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   /* Allinea tutto a destra */
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;        /* O quanto ti serve */
+    padding: 300px 5% 0 5%;  /* Top, Right, Bottom, Left */
+    box-sizing: border-box;
 }
 
-.did p{
+.did h1 {
     text-align: right;
-    float: right;
-    width: 30%;
-    padding-top: 1%;
-    padding-left: 60%;
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.did p {
+    text-align: right;
     font-size: 30px;
     color: #fff;
+    max-width: 500px;
+    width: 100%;
 }
 
 
@@ -105,18 +113,17 @@ html, body {
     .menu ul {
         gap: 18px;
     }
-    .wrapper {
+     .did {
+        padding: 150px 4vw 0 4vw;
+        min-height: 40vh;
+    }
+    .did h1 {
+        font-size: 2rem;
+        max-width: 95vw;
+    }
+    .did p {
+        font-size: 1.2rem;
         max-width: 90vw;
-        padding: 24px 8px;
-    }
-    .wrapper h1 {
-        font-size: 1.3rem;
-    }
-    .wrapper p {
-        font-size: 1rem;
-    }
-    .did {
-        padding-right: 8vw; 
     }
 }
 
@@ -138,17 +145,14 @@ html, body {
         flex-direction: column;
         align-items: center;
     }
-    .wrapper {
-        max-width: 98vw;
-        padding: 12px 4px;
+     .did {
+        padding: 60px 2vw 0 2vw;
+        min-height: 30vh;
     }
-    .wrapper h1 {
-        font-size: 1.1rem;
+    .did h1 {
+        font-size: 1.3rem;
     }
-    .wrapper p {
-        font-size: 0.95rem;
-    }
-    .did {
-        padding-right: 4vw; 
+    .did p {
+        font-size: 1rem;
     }
 }
