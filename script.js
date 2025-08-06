@@ -12,7 +12,7 @@ function getInfo() {
 
     for(var i=0; i< objPeople.length;i++){
         if(username== objPeople[i].username && password== objPeople[i].password){
-            window.location.href = 'http://127.0.0.1:5500/Home.html';
+            window.location.href = 'https://pernoidue.github.io/Home.html';
             log=true;
             return
         }
@@ -31,5 +31,6 @@ function ver(){
         window.location.href = 'http://127.0.0.1:5500/login.html';
         return
     }
+
 
 }
