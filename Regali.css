@@ -17,7 +17,7 @@ html, body {
 .Home {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(storia.webp);
+    background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(regali.webp);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -121,7 +121,7 @@ html, body {
 
 @media (max-width: 600px) {
     .Home {
-        background-image: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(STORIA%20MOB.webp);
+        background-image: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(regali.webp);
     }
     .navbar {
         flex-direction: column;
@@ -148,6 +148,7 @@ html, body {
         font-size: 0.95rem;
     }
 }
+
 
 
 
