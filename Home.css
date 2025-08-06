@@ -8,27 +8,28 @@
 }
 
 html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
     min-height: 100vh;
-    color: #fff;
     background: none;
 }
 
 .Home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(homepa.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
 
 .navbar {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     height: auto;
     display: flex;
     align-items: center;
@@ -69,14 +70,13 @@ html, body {
     color: #831005;
 }
 
-
 .did {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding-right: 8vw;
+    padding-right: 15vw; /* Spostato più a destra */
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -96,8 +96,37 @@ html, body {
     margin-left: auto;
 }
 
-/* --- RESPONSIVE STYLES --- */
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(20, 20, 20, 0.7);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #fff;
+    border-radius: 10px;
+    margin: 32px auto;
+    padding: 40px 24px;
+    box-sizing: border-box;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.wrapper p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+/* Responsive styles */
 @media (max-width: 900px) {
+    .Home{
+        background-size: cover;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -106,56 +135,50 @@ html, body {
     .menu ul {
         gap: 18px;
     }
-    .logo {
-        font-size: 1.5rem;
+    .wrapper {
+        max-width: 90vw;
+        padding: 24px 8px;
     }
-    .did h1 {
-        font-size: 2.2rem;
+    .wrapper h1 {
+        font-size: 1.3rem;
     }
-    .did p {
+    .wrapper p {
         font-size: 1rem;
+    }
+    .did {
+        padding-right: 8vw; /* Spostato più a destra anche qui */
     }
 }
 
 @media (max-width: 768px) {
     .Home {
-        background-image: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(homepag\ mob.webp);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
+        background-image: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(homepag\ mob.webp);
     }
     .navbar {
-        width: 100vw;
-        max-width: 100%;
-        height: auto;
-        display: flex;
         flex-direction: column;
         align-items: center;
-        box-sizing: border-box;
         padding: 8px;
     }
-    .icon, .logo, .menu {
-        width: 100%;
-        padding: 8px 0;
-        text-align: center;
-        box-sizing: border-box;
+    .logo {
+        font-size: 1.5rem;
+        padding: 0;
     }
     .menu ul {
         gap: 10px;
         flex-direction: column;
         align-items: center;
     }
-    .did {
-        align-items: flex-end;
-        padding: 30px 4vw 0 0;
+    .wrapper {
+        max-width: 98vw;
+        padding: 12px 4px;
     }
-    .did h1 {
-        font-size: 1.3rem;
+    .wrapper h1 {
+        font-size: 1.1rem;
     }
-    .did p {
+    .wrapper p {
         font-size: 0.95rem;
+    }
+    .did {
+        padding-right: 4vw; /* Mobile, comunque più a destra */
     }
 }
