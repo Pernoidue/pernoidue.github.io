@@ -67,6 +67,7 @@ body {
 }
 
 .wrapper {
+    background: transparent;
     width: 100%;
     max-width: 600px;
     border: 2px solid rgba(255,255,255,0.2);
@@ -146,6 +147,7 @@ body {
         font-size: 0.95rem;
     }
 }
+
 
 
 
